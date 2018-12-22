@@ -1,0 +1,4 @@
+[alias]
+    prev = checkout HEAD^
+	next = !git checkout `git rev-list HEAD..master | tail -1`
+    
