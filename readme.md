@@ -41,3 +41,12 @@ python manage.py makemigrations
 
 python manage.py emigrate
 ```
+
+
+Request response cycle
+----------------------
+
+Server creates dispatcher object from url mappings 
+Browser -> Request -> Server -> Convert request into request python object -> dispatcher uses url route mappings and routes the request -> Middleware-> Views & Mixins -> View interacts with Templates and Forms and Mixins -> ORM -> SQL 
+
+DB

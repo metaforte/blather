@@ -16,8 +16,10 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from blat import views
+from courses.views import my_first_view
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', views.home, "homepage")
+    #url(r'^$', views.home, "homepage")
+    url(r'^$',my_first_view)
 ]
