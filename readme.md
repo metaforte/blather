@@ -10,6 +10,10 @@ mkdir blather
 cd blather
 git init .
 
+git remote add origin https://github.com/pikeview/blather.git
+
+git push -u origin master
+
 django-admin startproject config
 
 mv config src
