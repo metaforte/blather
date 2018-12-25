@@ -16,3 +16,9 @@ def my_first_view_v2(request, who):
 #start using templates
 def my_first_view_v3(request, who):
     return render (request, 'courses/hello.html',context={'who':who,})
+
+from .models import Course
+from django.shortcuts import get_object_or_404
+def course_detail(request, course_id):
+    course = get_object_or_404 (Course,id=course_id)
+    return render(request, 'courses/course_detail.html', {'course':course})
