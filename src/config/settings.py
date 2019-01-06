@@ -40,8 +40,9 @@ INSTALLED_APPS = (
     'django_extensions',
     'blat',
     'courses',
+    'students',
 )
-
+AUTH_USER_MODEL = 'students.User'
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
